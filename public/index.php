@@ -7,17 +7,17 @@ use app\core\Router;
 
 $router = new Router();
 
-$router->get('/', 'JogadorController@listarTodos');
+$router->get('/', 'LivroController@listarTodos');
 
-// Jogador Routes
-$router->get('/jogadores', 'JogadorController@listarTodos');
-$router->get('/jogadores/jogador', 'JogadorController@verJogador');
-$router->get('/jogadores/cadastrar', 'JogadorController@criar');
+// Livro Routes
+$router->get('/livros', 'LivroController@listarTodos');
+$router->get('/livros/livro', 'LivroController@verLivro');
+$router->get('/livros/cadastrar', 'LivroController@criar');
 
-$router->post('/jogadores/salvar', 'JogadorController@salvar');
-$router->get('/jogadores/editar', 'JogadorController@editar');
-$router->post('/jogadores/atualizar', 'JogadorController@atualizar');
-$router->get('/jogadores/excluir', 'JogadorController@excluir');
+$router->post('/livros/salvar', 'LivroController@salvar');
+$router->get('/livros/editar', 'LivroController@editar');   
+$router->post('/livros/atualizar', 'LivroController@atualizar');
+$router->get('/livros/excluir', 'LivroController@excluir');
 
 
 $router->get('/usuarios', 'UsuarioController@index');
@@ -33,7 +33,7 @@ $router->post('/logar', 'AutenticacaoController@logar');
 
 
 
-$router->get('/teste', 'JogadorController@redirecionarTeste');
+$router->get('/teste', 'LivroController@redirecionarTeste');
 
 
 

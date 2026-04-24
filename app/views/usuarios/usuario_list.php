@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="mt-4">
-            <a href="<?= URL_BASE ?>/jogadores" class="btn btn-link">Ver Jogadores</a>
+            <a href="<?= URL_BASE ?>/livros" class="btn btn-link">Ver Livros</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
